@@ -1,0 +1,10 @@
+char = game.Players.LocalPlayer.Character
+spawn(function()
+    repeat wait()
+        for _,v in pairs(char:GetChildren()) do
+            if v.Name == 'DrainStamina' or v.Name == 'DrainSprint' or v.Name == 'Hit' or v.Name == 'Hitt' or v.Name == 'Damaged' or v.Name == "Reset" or v.Name == "Grounded" or v.Name == "KnockedBack" or v.Name == "StayGrounded" or v.Name == "DamagedC" or v.Name == 'Lasso' or v.Name == 'KnockbackSmoke' or v.Name:match('Server') or v.Name == "Server" or v.Name:match("netOwner") or v.Name == 'FullHateMode' or v.Name == 'HeartLocket' or v.Name == 'RealKnife' or v.Name == 'HateArm' or v.Name == 'Karma' or v.Name == 'HateMode' then
+                v:Destroy()
+            end
+        end
+    until false
+end)
